@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - justpayPlugin (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - justpayPlugin (from `.symlinks/plugins/justpayPlugin/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  justpayPlugin:
+    :path: ".symlinks/plugins/justpayPlugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  justpayPlugin: 0bae3e3589085d498e0ecb57aac9bf4d307cd638
+
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+
+COCOAPODS: 1.9.1
