@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;

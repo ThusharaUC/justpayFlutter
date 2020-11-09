@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.model;
+package lk.sampath.iwallet.smb.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModelProperty;

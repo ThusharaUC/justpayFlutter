@@ -1,7 +1,7 @@
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
 
-import com.interblocks.iwallet.smb.logging.LoggingAspect;
+import lk.sampath.iwallet.smb.logging.LoggingAspect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

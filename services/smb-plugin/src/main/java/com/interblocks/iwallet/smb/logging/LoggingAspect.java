@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.logging;
+package lk.sampath.iwallet.smb.logging;
 
 
 import lombok.extern.log4j.Log4j2;
@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Before;
 @Log4j2
 public class LoggingAspect {
 
-    @Before("execution(* com.interblocks.iwallet.smb.servicefacade.*.*(..))")
+    @Before("execution(* lk.sampath.iwallet.smb.servicefacade.*.*(..))")
     public void before(JoinPoint joinPoint) {
         log.info("Invoked {}.{}",
                 joinPoint.getTarget().getClass().getSimpleName(),
@@ -21,7 +21,7 @@ public class LoggingAspect {
                 joinPoint.getSignature().getName(), joinPoint.getArgs());
     }
 
-    @AfterReturning(value = "execution(* com.interblocks.iwallet.smb.servicefacade.*.*(..))", returning = "result")
+    @AfterReturning(value = "execution(* lk.sampath.iwallet.smb.servicefacade.*.*(..))", returning = "result")
     public void afterReturning(JoinPoint joinPoint, Object result) {
         log.info("{}.{}  returned",
                 joinPoint.getTarget().getClass().getSimpleName(),

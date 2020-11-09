@@ -1,9 +1,9 @@
-package com.interblocks.iwallet.smb.exception;
+package lk.sampath.iwallet.smb.exception;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-import com.interblocks.iwallet.smb.model.ResponseDefault;
-import com.interblocks.iwallet.smb.util.ResponseCreator;
+import lk.sampath.iwallet.smb.model.ResponseDefault;
+import lk.sampath.iwallet.smb.util.ResponseCreator;
 import com.interblocks.webtools.core.exceptions.ServiceException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.core.Ordered;

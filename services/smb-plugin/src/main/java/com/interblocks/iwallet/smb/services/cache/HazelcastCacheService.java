@@ -1,15 +1,15 @@
-package com.interblocks.iwallet.smb.services.cache;
+package lk.sampath.iwallet.smb.services.cache;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
 import com.hazelcast.core.MultiMap;
-import com.interblocks.iwallet.isodetails.model.ISOCountryDetails;
-import com.interblocks.iwallet.isodetails.service.ISODetailsService;
-import com.interblocks.iwallet.subcomponents.cache.CacheService;
-import com.interblocks.iwallet.subcomponents.cache.domain.UserTrxData;
-import com.interblocks.iwallet.subcomponents.organization.db.model.BnkVwCurrRate;
-import com.interblocks.iwallet.subcomponents.organization.db.repository.CurrencyRepository;
-import com.interblocks.iwallet.util.Const;
+import lk.sampath.iwallet.isodetails.model.ISOCountryDetails;
+import lk.sampath.iwallet.isodetails.service.ISODetailsService;
+import lk.sampath.iwallet.subcomponents.cache.CacheService;
+import lk.sampath.iwallet.subcomponents.cache.domain.UserTrxData;
+import lk.sampath.iwallet.subcomponents.organization.db.model.BnkVwCurrRate;
+import lk.sampath.iwallet.subcomponents.organization.db.repository.CurrencyRepository;
+import lk.sampath.iwallet.util.Const;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

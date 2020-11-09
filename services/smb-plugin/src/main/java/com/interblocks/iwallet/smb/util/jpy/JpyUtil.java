@@ -1,10 +1,10 @@
-package com.interblocks.iwallet.smb.util.jpy;
+package lk.sampath.iwallet.smb.util.jpy;
 //
 //import io.swagger.model.PostAccount;
 //import io.swagger.model.ResponseDefaultError;
 //import io.swagger.model.ResponseDefaultSuccess;
 
-import com.interblocks.iwallet.smb.rest.SMBRestClient;
+import lk.sampath.iwallet.smb.rest.SMBRestClient;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.configuration2.XMLConfiguration;
 import org.apache.commons.configuration2.builder.FileBasedConfigurationBuilder;

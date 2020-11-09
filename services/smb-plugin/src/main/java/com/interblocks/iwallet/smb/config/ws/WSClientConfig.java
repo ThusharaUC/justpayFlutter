@@ -1,7 +1,7 @@
-package com.interblocks.iwallet.smb.config.ws;
+package lk.sampath.iwallet.smb.config.ws;
 
 //import com.hitachidps.iwallet.smb.service.wsClient.VishwaClientService;
-import com.interblocks.iwallet.smb.services.wsClient.VishwaClientService;
+import lk.sampath.iwallet.smb.services.wsClient.VishwaClientService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ public class WSClientConfig {
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("com.interblocks.iwallet.smb.wsdl.vishwa");
+        marshaller.setContextPath("lk.sampath.iwallet.smb.wsdl.vishwa");
         return marshaller;
     }
     @Bean

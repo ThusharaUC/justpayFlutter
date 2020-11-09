@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.configuration;
+package lk.sampath.iwallet.smb.configuration;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonTokenId;

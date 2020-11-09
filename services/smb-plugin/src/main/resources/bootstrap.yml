@@ -12,7 +12,7 @@ spring:
       uri: ${CONFIG_DEFAULT_ZONE_URL:http://localhost:8761/config}
       #uri: ${CONFIG_DEFAULT_ZONE_URL:http://192.168.1.200:8761/config}
   jackson:
-    date-format: com.interblocks.iwallet.smb.configuration.RFC3339DateFormat
+    date-format: lk.sampath.iwallet.smb.configuration.RFC3339DateFormat
     serialization:
       WRITE_DATES_AS_TIMESTAMPS: false
   profiles:

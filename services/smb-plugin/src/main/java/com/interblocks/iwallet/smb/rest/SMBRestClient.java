@@ -1,8 +1,8 @@
-package com.interblocks.iwallet.smb.rest;
+package lk.sampath.iwallet.smb.rest;
 
-import com.interblocks.iwallet.adaptor.util.JsonPrinter;
-import com.interblocks.iwallet.smb.rest.dto.NicValidateReq;
-import com.interblocks.iwallet.smb.rest.dto.NicValidateRes;
+import lk.sampath.iwallet.adaptor.util.JsonPrinter;
+import lk.sampath.iwallet.smb.rest.dto.NicValidateReq;
+import lk.sampath.iwallet.smb.rest.dto.NicValidateRes;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

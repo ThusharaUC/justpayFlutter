@@ -1,12 +1,12 @@
-package com.interblocks.iwallet.smb.api.controller;
+package lk.sampath.iwallet.smb.api.controller;
 
 
 //import com.hitachidps.iwallet.smb.model.dto.VishwaLoginRequest;
 //import com.hitachidps.iwallet.smb.service.VishwaService;
-import com.interblocks.iwallet.smb.model.dto.ResponseLoginUser;
-import com.interblocks.iwallet.smb.model.dto.ResponseSMBDefault;
-import com.interblocks.iwallet.smb.model.dto.VishwaLoginRequest;
-import com.interblocks.iwallet.smb.services.VishwaService;
+import lk.sampath.iwallet.smb.model.dto.ResponseLoginUser;
+import lk.sampath.iwallet.smb.model.dto.ResponseSMBDefault;
+import lk.sampath.iwallet.smb.model.dto.VishwaLoginRequest;
+import lk.sampath.iwallet.smb.services.VishwaService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

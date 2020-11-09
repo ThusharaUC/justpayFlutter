@@ -18,7 +18,7 @@
     </properties>
     <parent>
         <artifactId>iwallet</artifactId>
-        <groupId>com.interblocks.iwallet</groupId>
+        <groupId>lk.sampath.iwallet</groupId>
         <version>1.0.71</version>
     </parent>
     <build>
@@ -73,7 +73,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.interblocks.iwallet</groupId>
+            <groupId>lk.sampath.iwallet</groupId>
             <artifactId>core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

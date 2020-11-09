@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.configuration;
+package lk.sampath.iwallet.smb.configuration;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

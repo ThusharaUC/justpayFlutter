@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb.configuration;
+package lk.sampath.iwallet.smb.configuration;
 
-import com.interblocks.iwallet.smb.api.ApiOriginFilter;
+import lk.sampath.iwallet.smb.api.ApiOriginFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

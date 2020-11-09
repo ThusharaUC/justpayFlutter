@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.core.HazelcastInstance;

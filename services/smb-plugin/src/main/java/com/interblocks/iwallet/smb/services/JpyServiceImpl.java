@@ -1,7 +1,7 @@
-package com.interblocks.iwallet.smb.services;
+package lk.sampath.iwallet.smb.services;
 
-import com.interblocks.iwallet.smb.util.jpy.JPBank;
-import com.interblocks.iwallet.smb.util.jpy.JpyUtil;
+import lk.sampath.iwallet.smb.util.jpy.JPBank;
+import lk.sampath.iwallet.smb.util.jpy.JpyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

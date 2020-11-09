@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb;
+package lk.sampath.iwallet.smb;
 
-import com.interblocks.iwallet.smb.config.ApiPartnersConfiguration;
+import lk.sampath.iwallet.smb.config.ApiPartnersConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

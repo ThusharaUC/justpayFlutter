@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.rest;
+package lk.sampath.iwallet.smb.rest;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

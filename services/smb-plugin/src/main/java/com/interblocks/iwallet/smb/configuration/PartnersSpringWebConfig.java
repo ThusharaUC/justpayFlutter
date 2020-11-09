@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.configuration;
+package lk.sampath.iwallet.smb.configuration;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -19,27 +19,27 @@ import java.net.URI;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.interblocks.iwallet.smb.configuration",
-        "com.interblocks.iwallet.smb.config",
-        "com.interblocks.iwallet.adaptor.rest.admin",
-        "com.interblocks.iwallet.smb",
-        "com.interblocks.iwallet.oauth",
-        "com.interblocks.iwallet.config.core",
-        "com.interblocks.iwallet.config.database",
-        "com.interblocks.iwallet.isodetails",
-        "com.interblocks.iwallet.service",
-        "com.interblocks.iwallet.api.qrcode",
-        "com.interblocks.iwallet.subcomponents",
-        "com.interblocks.iwallet.util",
-        "com.interblocks.iwallet.adaptor",
-        "com.interblocks.iwallet.repository",
+        "lk.sampath.iwallet.smb.configuration",
+        "lk.sampath.iwallet.smb.config",
+        "lk.sampath.iwallet.adaptor.rest.admin",
+        "lk.sampath.iwallet.smb",
+        "lk.sampath.iwallet.oauth",
+        "lk.sampath.iwallet.config.core",
+        "lk.sampath.iwallet.config.database",
+        "lk.sampath.iwallet.isodetails",
+        "lk.sampath.iwallet.service",
+        "lk.sampath.iwallet.api.qrcode",
+        "lk.sampath.iwallet.subcomponents",
+        "lk.sampath.iwallet.util",
+        "lk.sampath.iwallet.adaptor",
+        "lk.sampath.iwallet.repository",
         "com.interblocks.webtools",
         "io.swagger",
 })
 @EnableJpaRepositories(basePackages = {
         "com.interblocks.webtools",
-        "com.interblocks.iwallet.subcomponents",
-        "com.interblocks.iwallet.repository"
+        "lk.sampath.iwallet.subcomponents",
+        "lk.sampath.iwallet.repository"
 })
 public class PartnersSpringWebConfig {
     @Value("${smb-plugin.log.file:./logs/smb-plugin.log}")

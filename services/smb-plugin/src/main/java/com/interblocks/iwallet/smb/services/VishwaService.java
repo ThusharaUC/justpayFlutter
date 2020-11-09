@@ -1,11 +1,11 @@
-package com.interblocks.iwallet.smb.services;
+package lk.sampath.iwallet.smb.services;
 
 //import com.hitachidps.iwallet.smb.model.dto.ResponseLoginUser;
 //import com.hitachidps.iwallet.smb.model.dto.VishwaLoginRequest;
 
-import com.interblocks.iwallet.smb.model.dto.ResponseLoginUser;
-import com.interblocks.iwallet.smb.model.dto.VishwaLoginRequest;
-import com.interblocks.iwallet.smb.rest.dto.NicValidateRes;
+import lk.sampath.iwallet.smb.model.dto.ResponseLoginUser;
+import lk.sampath.iwallet.smb.model.dto.VishwaLoginRequest;
+import lk.sampath.iwallet.smb.rest.dto.NicValidateRes;
 
 public interface VishwaService {
 

@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.api;
+package lk.sampath.iwallet.smb.api;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;

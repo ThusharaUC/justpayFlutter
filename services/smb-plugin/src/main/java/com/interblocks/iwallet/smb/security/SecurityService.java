@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb.security;
+package lk.sampath.iwallet.smb.security;
 
-import com.interblocks.iwallet.oauth.UserPrincipal;
+import lk.sampath.iwallet.oauth.UserPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 

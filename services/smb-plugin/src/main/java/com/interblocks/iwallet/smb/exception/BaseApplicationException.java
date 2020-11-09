@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.exception;
+package lk.sampath.iwallet.smb.exception;
 
 import com.interblocks.webtools.broker.model.iadmin.merchant.shared.IAdminCommonError;
 import lombok.Data;

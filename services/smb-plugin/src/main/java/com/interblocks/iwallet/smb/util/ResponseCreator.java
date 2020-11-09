@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb.util;
+package lk.sampath.iwallet.smb.util;
 
-import com.interblocks.iwallet.smb.model.ResponseDefault;
+import lk.sampath.iwallet.smb.model.ResponseDefault;
 import com.interblocks.webtools.core.exceptions.ServiceException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

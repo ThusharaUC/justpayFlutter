@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.util.jpy;
+package lk.sampath.iwallet.smb.util.jpy;
 
 public enum JustPayResponseEnum {
     SUCCESSFUL("0000","Successful",false,false),

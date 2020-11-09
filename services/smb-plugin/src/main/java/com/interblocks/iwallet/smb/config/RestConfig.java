@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;

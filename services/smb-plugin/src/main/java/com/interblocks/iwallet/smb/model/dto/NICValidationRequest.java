@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.model.dto;
+package lk.sampath.iwallet.smb.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

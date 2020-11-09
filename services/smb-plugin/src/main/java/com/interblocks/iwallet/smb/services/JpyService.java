@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb.services;
+package lk.sampath.iwallet.smb.services;
 
-import com.interblocks.iwallet.smb.util.jpy.JPBank;
+import lk.sampath.iwallet.smb.util.jpy.JPBank;
 
 import javax.xml.ws.Response;
 import java.util.List;

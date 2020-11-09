@@ -1,4 +1,4 @@
-package com.interblocks.iwallet.smb.util.jpy;
+package lk.sampath.iwallet.smb.util.jpy;
 
 public enum JustPayInstrumentStatusEnum {
 

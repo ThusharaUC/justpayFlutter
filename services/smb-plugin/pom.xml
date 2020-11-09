@@ -20,7 +20,7 @@
     </properties>
     <parent>
         <artifactId>iwallet</artifactId>
-        <groupId>com.interblocks.iwallet</groupId>
+        <groupId>lk.sampath.iwallet</groupId>
         <version>1.0.72-SNAPSHOT</version>
     </parent>
     <build>
@@ -50,7 +50,7 @@
                 </executions>
                 <configuration>
                     <schemaLanguage>WSDL</schemaLanguage>
-                    <generatePackage>com.interblocks.iwallet.smb.wsdl.vishwa</generatePackage>
+                    <generatePackage>lk.sampath.iwallet.smb.wsdl.vishwa</generatePackage>
                     <schemas>
                         <schema>
                             <url>src/main/resources/wsdl/MobileServices.wsdl</url>
@@ -96,7 +96,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.interblocks.iwallet</groupId>
+            <groupId>lk.sampath.iwallet</groupId>
             <artifactId>core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

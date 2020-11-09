@@ -1,9 +1,9 @@
-package com.interblocks.iwallet.smb.services.wsClient;
+package lk.sampath.iwallet.smb.services.wsClient;
 
 //import com.hitachidps.iwallet.smb.wsdl.vishwa.DoLogin;
 //import com.hitachidps.iwallet.smb.wsdl.vishwa.DoLoginResponse;
-import com.interblocks.iwallet.smb.wsdl.vishwa.DoLogin;
-import com.interblocks.iwallet.smb.wsdl.vishwa.DoLoginResponse;
+import lk.sampath.iwallet.smb.wsdl.vishwa.DoLogin;
+import lk.sampath.iwallet.smb.wsdl.vishwa.DoLoginResponse;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 public class VishwaClientService extends WebServiceGatewaySupport {

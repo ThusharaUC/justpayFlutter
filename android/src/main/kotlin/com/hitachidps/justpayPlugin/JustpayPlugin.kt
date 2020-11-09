@@ -2,6 +2,7 @@ package com.hitachidps.justpayPlugin
 
 import android.content.*
 import android.os.Build
+import android.os.Handler
 import androidx.annotation.NonNull;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -15,6 +16,9 @@ import com.lankaclear.justpay.callbacks.CreateIdentityCallback
 import io.flutter.plugin.common.BinaryMessenger
 import com.lankaclear.justpay.callbacks.SignMessageCallback
 import kotlin.collections.HashMap
+import android.os.Looper
+
+
 
 
 /** JustpayPlugin */
@@ -48,8 +52,33 @@ public class JustpayPlugin: FlutterPlugin, MethodCallHandler {
     lateinit var lcTrustedSDK: LCTrustedSDK
 
   }
+  private class MethodResultWrapper internal constructor(private val methodResult: Result) : Result {
+    private val handler: Handler
 
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+    init {
+      handler = Handler(Looper.getMainLooper())
+    }
+
+    override fun success(result: Any?) {
+      handler.post(
+              Runnable { methodResult.success(result) })
+    }
+
+    override fun error(
+            errorCode: String, errorMessage: String?, errorDetails: Any?) {
+      handler.post(
+              Runnable { methodResult.error(errorCode, errorMessage, errorDetails) })
+    }
+
+    override fun notImplemented() {
+      handler.post(
+              Runnable { methodResult.notImplemented() })
+    }
+  }
+
+
+  override fun onMethodCall(@NonNull call: MethodCall, @NonNull rawResult: Result) {
+    val result = MethodResultWrapper(rawResult)
 
     if (call.method == "getPlatformVersion") {
       result.success("Android ${Build.VERSION.RELEASE}")
@@ -92,14 +121,14 @@ public class JustpayPlugin: FlutterPlugin, MethodCallHandler {
 
     lcTrustedSDK.createIdentity(challengeKey, object : CreateIdentityCallback {
       override fun onSuccess() {
-        result.success("success")
+        result.success("success");
       }
 
       override fun onFailed(errorCode: Int, errorMessage: String) {
         result.error(errorCode.toString(),errorMessage, "Error in createIdentity")
       }
     })
-    result.success(true)
+//    result.success(true)
   }
 
   private fun signMessage(message : String, @NonNull result: Result){
@@ -107,11 +136,11 @@ public class JustpayPlugin: FlutterPlugin, MethodCallHandler {
     lcTrustedSDK.signMessage(message, object : SignMessageCallback {
 
       override fun onSuccess(signMessage: String, status: String) {
-        val response = HashMap<String,String>()
-        response.put("message", signMessage)
-        response.put("status", status)
-        val responseObj = response.toString()
-        result.success(responseObj)
+//        val response = HashMap<String,String>()
+//        response.put("message", signMessage)
+//        response.put("status", status)
+//        val responseObj = response.toString()
+        result.success(signMessage)
       }
 
       override fun onFailed(errorCode: Int, errorMessage: String) {

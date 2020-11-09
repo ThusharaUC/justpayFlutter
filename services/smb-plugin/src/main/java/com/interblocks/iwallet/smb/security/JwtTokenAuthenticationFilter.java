@@ -1,12 +1,12 @@
-package com.interblocks.iwallet.smb.security;
+package lk.sampath.iwallet.smb.security;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.interblocks.iwallet.oauth.TokenCipher;
-import com.interblocks.iwallet.oauth.UserPrincipal;
-import com.interblocks.iwallet.smb.config.JwtConfig;
-import com.interblocks.iwallet.smb.model.ResponseDefault;
-import com.interblocks.iwallet.util.Const;
+import lk.sampath.iwallet.oauth.TokenCipher;
+import lk.sampath.iwallet.oauth.UserPrincipal;
+import lk.sampath.iwallet.smb.config.JwtConfig;
+import lk.sampath.iwallet.smb.model.ResponseDefault;
+import lk.sampath.iwallet.util.Const;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Header;

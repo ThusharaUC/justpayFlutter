@@ -12,4 +12,35 @@
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   [SwiftJustpayPlugin registerWithRegistrar:registrar];
 }
+
+//
+// + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar> *)registrar {
+//   FlutterMethodChannel *channel =
+//       [FlutterMethodChannel methodChannelWithName:@"plugins.flutter.io/local_auth"
+//                                   binaryMessenger:[registrar messenger]];
+//   JustpayPlugin *instance = [[JustpayPlugin alloc] init];
+//   [registrar addMethodCallDelegate:instance channel:channel];
+//   [registrar addApplicationDelegate:instance];
+// }
+//
+// - (void)handleMethodCall:(FlutterMethodCall *)call result:(FlutterResult)result {
+//   if ([@"getDeviceId" isEqualToString:call.method]) {
+//     result([[device identifierForVendor] UUIDString])
+//   } else if ([@"createIdentity" isEqualToString:call.method]) {
+//     [self createIdentity:call.arguments withFlutterResult:result];
+//   } else {
+//     result(FlutterMethodNotImplemented);
+//   }
+// }
+//
+// - (void)createIdentity:(NSDictionary *)arguments withFlutterResult:(FlutterResult)result  {
+//   LCTrustedSDK *lcTrustedSDK;
+//    lcTrustedSDK = [[LCTrustedSDK alloc] init];
+//    lcTrustedSDK.delegate = self ;
+//    [lcTrustedSDK createIdentity: arguments[@"challengeKey"];
+//    - (void)onIdentityFailed:(int)errorCode message:(NSString *)errorMessage {
+//     }
+//     - (void)onIdentitySuccess {
+//     }
+// }
 @end

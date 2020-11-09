@@ -23,11 +23,16 @@ class _MyAppState extends State<MyApp> {
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
+  Future  initPlatformState() async {
+    var platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await JustpayPlugin.platformVersion;
+      await JustpayPlugin.createIdentity("challengeKey").then((value) =>
+      {
+        platformVersion = value
+      }).catchError((onError) => {
+        platformVersion = onError
+      });
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
-import com.interblocks.iwallet.oauth.UserPrincipal;
+import lk.sampath.iwallet.oauth.UserPrincipal;
 
 import javax.ws.rs.core.SecurityContext;
 import java.security.Principal;

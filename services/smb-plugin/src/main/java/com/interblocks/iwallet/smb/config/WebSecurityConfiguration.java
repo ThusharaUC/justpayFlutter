@@ -1,6 +1,6 @@
-package com.interblocks.iwallet.smb.config;
+package lk.sampath.iwallet.smb.config;
 
-import com.interblocks.iwallet.smb.security.JwtTokenAuthenticationFilter;
+import lk.sampath.iwallet.smb.security.JwtTokenAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
